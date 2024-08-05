@@ -9,7 +9,7 @@
     <script src="./tailwind.config.js"></script>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
         <img src="./portfolio_images/images/header-bg-color.png" alt="" class="w-full">
@@ -32,9 +32,35 @@
                    border-gray-500 rounded-full ml-4">Contact
                 <img src="./portfolio_images/images/arrow-icon.png" alt="" class="w-3">
             </a>
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="./portfolio_images/images/menu-black.png" alt="" class="w-6">
+            </button>
+            
         </div>
 
-    </nav>
+
+<!-- -------------------------- mobile menu --------- --- >
+ 
+-->
+
+        <ul id="sideMenu"  class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen
+         bg-rose-50 transition duration-500 ">
+
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./portfolio_images/images/close-black.png" alt="" class="w-5 cursor-pointer">
+            </div>
+            
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me </a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contect me </a></li>
+        </ul>
+
+</nav>
 </body>
+
+<script src="./script.js"></script>
 
 </html>
