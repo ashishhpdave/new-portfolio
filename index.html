@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -36,21 +36,21 @@
             <button class="block md:hidden ml-3" onclick="openMenu()">
                 <img src="./portfolio_images/images/menu-black.png" alt="" class="w-6">
             </button>
-            
+
         </div>
 
 
-<!-- -------------------------- mobile menu --------- --- >
+        <!-- -------------------------- mobile menu --------- --- >
  
 -->
 
-        <ul id="sideMenu"  class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen
          bg-rose-50 transition duration-500 ">
 
             <div class="absolute right-6 top-6" onclick="closeMenu()">
                 <img src="./portfolio_images/images/close-black.png" alt="" class="w-5 cursor-pointer">
             </div>
-            
+
             <li><a href="#top" onclick="closeMenu()">Home</a></li>
             <li><a href="#about" onclick="closeMenu()">About me </a></li>
             <li><a href="#services" onclick="closeMenu()">Services</a></li>
@@ -58,37 +58,118 @@
             <li><a href="#contact" onclick="closeMenu()">Contect me </a></li>
         </ul>
 
-</nav>
+    </nav>
 
 
-<!-- ---------------------- Header ---------------------- -->
+    <!-- ---------------------- Header ---------------------- -->
 
-<div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center
  justify-center gap-4">
-    <img src="./portfolio_images/images/profile-img.png" alt="" class="rounded-full w-32">
-    <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">Hi! I'm Ashish Dave <img src="./portfolio_images/images/hand-icon.png" alt="" class="w-6">
-    </h3>
-    <h1 class="text-3xl sm:text-6xl lg:text-[66px]">frontend web developer based in londen.</h1>
-     <p class="max-w-2xl mx-auto">I am a frontend developer from California, USA with 10 years of experience in
-         multiple companies like Microsoft, Tesla and Apple</p>
+        <img src="./portfolio_images/images/profile-img.png" alt="" class="rounded-full w-32">
+        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">Hi! I'm Ashish Dave <img
+                src="./portfolio_images/images/hand-icon.png" alt="" class="w-6">
+        </h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px]">frontend web developer based in londen.</h1>
+        <p class="max-w-2xl mx-auto">I am a frontend developer from California, USA with 10 years of experience in
+            multiple companies like Microsoft, Tesla and Apple</p>
 
-         <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
-            <a href="#contact"
-             class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] 
-             text-white flex items-center gap-2">Contact me 
-             <img src="/portfolio_images/images/right-arrow-white.png" alt="" class="w-4"> </a>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] 
+             text-white flex items-center gap-2">Contact me
+                <img src="/portfolio_images/images/right-arrow-white.png" alt="" class="w-4"> </a>
 
-             <a href="./portfolio_images/images/Ashish_cv.pdf" download
-             class="px-10 py-3 border rounded-full border-gray-500 
-            bg-white flex items-center gap-2">My resume<img src="/portfolio_images/images/download-icon.png" 
-            alt="" class="w-4"> </a>
-         </div>
+            <a href="./portfolio_images/images/Ashish_cv.pdf" download class="px-10 py-3 border rounded-full border-gray-500 
+            bg-white flex items-center gap-2">My resume<img src="/portfolio_images/images/download-icon.png" alt=""
+                    class="w-4"> </a>
+        </div>
 
-</div>
+    </div>
 
 
+    <!-- ------------------ About me --------------- > -->
+
+        <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+            <h4 class="text-center mb-2 text-lg">Introduction </h4>
+            <h2 class="text-center text-5xl">About me </h2>
+
+            <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+                <div class="max-w-max mx-auto relative">
+                    <img src="./portfolio_images/images/user-image.png" alt="" class="w-64 sm:w-80 
+                    rounded-3xl max-w-none">
+
+                    <div class="bg-white w-1/2 aspect-square absolute 
+                    right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] 
+                    flex items-center justify-center">
+                        <img src="./portfolio_images/images/circular-text.png" alt="" class="w-full">
+                        <img src="./portfolio_images/images/dev-icon.png" alt="" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    </div>
+                </div>
+
+                <div class="flex-1">
+                <p class="mb-10 max-w-2xl">I am an experienced Frontend Developer with over a decade of 
+                    professional expertise in the field. Throughout my career, I 
+                    have had the privilege of collaboratinf wirh prestigious organizations,
+                    countributing to their success and growth. 
+                </p>
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 
+                    cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 
+                    duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./portfolio_images/images/code-icon.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">languages</h3>
+                        <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React Js, Next Js, Node Js</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 
+                    cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 
+                    duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./portfolio_images/images/edu-icon.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                        <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React Js, Next Js, Node Js</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 
+                    cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 
+                    duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./portfolio_images/images/project-icon.png" alt="" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Project</h3>
+                        <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React Js, Next Js, Node Js</p>
+                    </li>
+                </ul>
+                <h4 class="my-6 text-gray-700">Tools i use</h4>
+ 
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
+                     border-gray-400 rounded-lg cursor-pointer
+                      hover:-translate-y-1 duration-500">
+                        <img src="./portfolio_images/images/vscode.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
+                     border-gray-400 rounded-lg cursor-pointer
+                      hover:-translate-y-1 duration-500">
+                        <img src="./portfolio_images/images/firebase.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
+                     border-gray-400 rounded-lg cursor-pointer
+                      hover:-translate-y-1 duration-500">
+                        <img src="./portfolio_images/images/mongodb.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
+                     border-gray-400 rounded-lg cursor-pointer
+                      hover:-translate-y-1 duration-500">
+                        <img src="./portfolio_images/images/figma.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
+                     border-gray-400 rounded-lg cursor-pointer
+                      hover:-translate-y-1 duration-500">
+                        <img src="./portfolio_images/images/git.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="./script.js"></script>
 </body>
 
-<script src="./script.js"></script>
 
 </html>
