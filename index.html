@@ -7,9 +7,12 @@
     <title>New Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden font-Outif leading-8">
 
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
         <img src="./portfolio_images/images/header-bg-color.png" alt="" class="w-full">
@@ -17,7 +20,7 @@
 
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
         <img src="./portfolio_images/images/logo.png" alt="logo" class="w-28 cursor-pointer mr-14">
-        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo">
             <li><a href="#top">Home</a></li>
             <li><a href="#about">About me </a></li>
             <li><a href="#services">Services</a></li>
@@ -29,7 +32,7 @@
 
             <button><img src="./portfolio_images/images/moon_icon.png" alt="" class="w-6"></button>
             <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border
-                   border-gray-500 rounded-full ml-4">Contact
+                   border-gray-500 rounded-full ml-4 font-Ovo">Contact
                 <img src="./portfolio_images/images/arrow-icon.png" alt="" class="w-3">
             </a>
 
@@ -45,7 +48,7 @@
 -->
 
         <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen
-         bg-rose-50 transition duration-500 ">
+         bg-rose-50 transition duration-500 font-Ovo">
 
             <div class="absolute right-6 top-6" onclick="closeMenu()">
                 <img src="./portfolio_images/images/close-black.png" alt="" class="w-5 cursor-pointer">
@@ -66,11 +69,11 @@
     <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center
  justify-center gap-4">
         <img src="./portfolio_images/images/profile-img.png" alt="" class="rounded-full w-32">
-        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">Hi! I'm Ashish Dave <img
+        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo">Hi! I'm Ashish Dave <img
                 src="./portfolio_images/images/hand-icon.png" alt="" class="w-6">
         </h3>
-        <h1 class="text-3xl sm:text-6xl lg:text-[66px]">frontend web developer based in India.</h1>
-        <p class="max-w-2xl mx-auto">I am a frontend developer from California, USA with 10 years of experience in
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">frontend web developer based in India.</h1>
+        <p class="max-w-2xl mx-auto font-Ovo">I am a frontend developer from California, USA with 10 years of experience in
             multiple companies like Microsoft, Tesla and Apple</p>
 
         <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
@@ -89,8 +92,8 @@
     <!-- ------------------ About me --------------- > -->
 
         <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
-            <h4 class="text-center mb-2 text-lg">Introduction </h4>
-            <h2 class="text-center text-5xl">About me </h2>
+            <h4 class="text-center mb-2 text-lg font-Ovo">Introduction </h4>
+            <h2 class="text-center text-5xl font-Ovo">About me </h2>
 
             <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
                 <div class="max-w-max mx-auto relative">
@@ -100,13 +103,13 @@
                     <div class="bg-white w-1/2 aspect-square absolute 
                     right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] 
                     flex items-center justify-center">
-                        <img src="./portfolio_images/images/circular-text.png" alt="" class="w-full">
+                        <img src="./portfolio_images/images/circular-text.png" alt="" class="w-full animate-spin_slow">
                         <img src="./portfolio_images/images/dev-icon.png" alt="" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     </div>
                 </div>
 
                 <div class="flex-1">
-                <p class="mb-10 max-w-2xl">I am an experienced Frontend Developer with over a decade of 
+                <p class="mb-10 max-w-2xl font-Ovo">I am an experienced Frontend Developer with over a decade of 
                     professional expertise in the field. Throughout my career, I 
                     have had the privilege of collaboratinf wirh prestigious organizations,
                     countributing to their success and growth. 
@@ -134,7 +137,7 @@
                         <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React Js, Next Js, Node Js</p>
                     </li>
                 </ul>
-                <h4 class="my-6 text-gray-700">Tools i use</h4>
+                <h4 class="my-6 text-gray-700 font-Ovo">Tools i use</h4>
  
                 <ul class="flex items-center gap-3 sm:gap-5">
                     <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
@@ -170,9 +173,9 @@
         <!-- ------------Servise------------- -->
 
             <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-            <h4 class="text-center mb-2 text-lg">What i offer  </h4>
-            <h2 class="text-center text-5xl">My Services</h2>
-            <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I am a frountedn developer from Califonia , USA with 10 
+            <h4 class="text-center mb-2 text-lg font-Ovo">What i offer  </h4>
+            <h2 class="text-center text-5xl font-Ovo">My Services</h2>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I am a frountedn developer from Califonia , USA with 10 
                 year of experience in multiple companies like Microsoft, Tesla, and Apple 
             </p>
 
@@ -213,9 +216,9 @@
         <!-- ----------------- My Work ---------  -->
 
         <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
-            <h4 class="text-center mb-2 text-lg">My portfolio </h4>
-            <h2 class="text-center text-5xl">My latest work</h2>
-            <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Welcome to my web development portfolio! 
+            <h4 class="text-center mb-2 text-lg font-Ovo">My portfolio </h4>
+            <h2 class="text-center text-5xl font-Ovo">My latest work</h2>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Welcome to my web development portfolio! 
                 Explore a collection of Projects showcasing my expertise in 
                 front-end development.
             </p>
@@ -247,8 +250,8 @@
         flex items-center justify-between duration-500 group-hover:bottom-7">
 
         <div>
-            <h2 class="font-semibold">Frontend project</h2>
-            <p class="text-sm text-gray-700">Web Design</p>
+            <h2 class="font-semibold">Geo based app</h2>
+            <p class="text-sm text-gray-700">mobile app</p>
         </div>
         <div class="border rounded-full border-black w-9 aspect-square flex 
         item-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
@@ -265,7 +268,7 @@ bottom-5 left-1/2 -translate-x-1/2 py-3 px-5
 flex items-center justify-between duration-500 group-hover:bottom-7">
  
 <div>
-    <h2 class="font-semibold">Frontend project</h2>
+    <h2 class="font-semibold">Photography site </h2>
     <p class="text-sm text-gray-700">Web Design</p>
 </div>
 <div class="border rounded-full border-black w-9 aspect-square flex 
@@ -283,8 +286,8 @@ bottom-5 left-1/2 -translate-x-1/2 py-3 px-5
 flex items-center justify-between duration-500 group-hover:bottom-7">
 
 <div>
-    <h2 class="font-semibold">Frontend project</h2>
-    <p class="text-sm text-gray-700">Web Design</p>
+    <h2 class="font-semibold">UI/IX designing</h2>
+    <p class="text-sm text-gray-700">UI/IX designing</p>
 </div>
 <div class="border rounded-full border-black w-9 aspect-square flex 
 item-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
@@ -303,9 +306,9 @@ item-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 trans
     <!-- --------------------Contact-------------- -->
 
     <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./portfolio_images/images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
-        <h4 class="text-center mb-2 text-lg">Connect with me </h4>
-            <h2 class="text-center text-5xl">Get in touch</h2>
-            <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I'd love to hear from you! If you have any questions, 
+        <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me </h4>
+            <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I'd love to hear from you! If you have any questions, 
                 comments or feedback, please use the form below.
             </p>
 
