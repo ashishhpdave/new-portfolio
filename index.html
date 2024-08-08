@@ -25,7 +25,9 @@
         <img src="./portfolio_images/images/logo_dark.png" alt="logo" 
         class="w-28 cursor-pointer mr-14 hidden dark:block">
         <ul
-            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo">
+            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 
+            bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/50 
+            dark:bg-transparent">
             <li><a href="#top">Home</a></li>
             <li><a href="#about">About me </a></li>
             <li><a href="#services">Services</a></li>
@@ -40,12 +42,15 @@
                 <img src="./portfolio_images/images/sun_icon.png" alt="" class="w-6 hidden dark:block">
             </button>
             <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border
-                   border-gray-500 rounded-full ml-4 font-Ovo">Contact
-                <img src="./portfolio_images/images/arrow-icon.png" alt="" class="w-3">
+                   border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50">
+                   Contact
+                   <img src="./portfolio_images/images/arrow-icon.png" alt="" class="w-3 dark:hidden">
+                   <img src="./portfolio_images/images/arrow-icon-dark.png" alt="" class="w-3 hidden dark:block">
             </a>
 
             <button class="block md:hidden ml-3" onclick="openMenu()">
-                <img src="./portfolio_images/images/menu-black.png" alt="" class="w-6">
+                <img src="./portfolio_images/images/menu-black.png" alt="" class="w-6 dark:hidden">
+                <img src="./portfolio_images/images/menu-white.png" alt="" class="w-6 hidden dark:block">
             </button>
 
         </div>
@@ -56,10 +61,11 @@
 -->
 
         <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen
-         bg-rose-50 transition duration-500 font-Ovo">
+         bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white">
 
             <div class="absolute right-6 top-6" onclick="closeMenu()">
-                <img src="./portfolio_images/images/close-black.png" alt="" class="w-5 cursor-pointer">
+                <img src="./portfolio_images/images/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden">
+                <img src="./portfolio_images/images/close-white.png" alt="" class="w-5 cursor-pointer hidden dark:block">
             </div>
 
             <li><a href="#top" onclick="closeMenu()">Home</a></li>
@@ -87,11 +93,11 @@
 
         <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
             <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] 
-             text-white flex items-center gap-2">Contact me
+             text-white flex items-center gap-2 dark:border-transparent">Contact me
                 <img src="/portfolio_images/images/right-arrow-white.png" alt="" class="w-4"> </a>
 
             <a href="./portfolio_images/images/Ashish_cv.pdf" download class="px-10 py-3 border rounded-full border-gray-500 
-            bg-white flex items-center gap-2">My resume<img src="/portfolio_images/images/download-icon.png" alt=""
+            bg-white flex items-center gap-2 bg-white dark:text-black">My resume<img src="/portfolio_images/images/download-icon.png" alt=""
                     class="w-4"> </a>
         </div>
 
@@ -127,27 +133,39 @@
                 <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
                     <li class="border-[0.5px] border-gray-400 rounded-xl p-6 
                     cursor-pointer hover:bg-lightHover hover:-translate-y-1 
-                    duration-500 hover:shadow-black">
-                        <img src="./portfolio_images/images/code-icon.png" alt="" class="w-7 mt-3">
-                        <h3 class="my-4 font-semibold text-gray-700">languages</h3>
-                        <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React Js, Next Js, Node Js</p>
+                    duration-500 hover:shadow-black 
+                    dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+
+                        <img src="./portfolio_images/images/code-icon.png" alt="" class="w-7 mt-3 dark:hidden">
+
+                        <img src="./portfolio_images/images/code-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
+
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">languages</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">HTML, CSS, JavaScript, React Js, Next Js, Node Js</p>
                     </li>
                     <li class="border-[0.5px] border-gray-400 rounded-xl p-6 
                     cursor-pointer hover:bg-lightHover hover:-translate-y-1 
-                    duration-500 hover:shadow-black">
-                        <img src="./portfolio_images/images/edu-icon.png" alt="" class="w-7 mt-3">
-                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
-                        <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React Js, Next Js, Node Js</p>
+                    duration-500 hover:shadow-black 
+                     dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+
+                        <img src="./portfolio_images/images/edu-icon.png" alt="" class="w-7 mt-3 dark:hidden">
+                        <img src="./portfolio_images/images/edu-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
+
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">HTML, CSS, JavaScript, React Js, Next Js, Node Js</p>
                     </li>
                     <li class="border-[0.5px] border-gray-400 rounded-xl p-6 
                     cursor-pointer hover:bg-lightHover hover:-translate-y-1 
-                    duration-500 hover:shadow-black">
-                        <img src="./portfolio_images/images/project-icon.png" alt="" class="w-7 mt-3">
-                        <h3 class="my-4 font-semibold text-gray-700">Project</h3>
-                        <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React Js, Next Js, Node Js</p>
+                    duration-500 hover:shadow-black 
+                     dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <img src="./portfolio_images/images/project-icon.png" alt="" class="w-7 mt-3 dark:hidden">
+
+                        <img src="./portfolio_images/images/project-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Project</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">HTML, CSS, JavaScript, React Js, Next Js, Node Js</p>
                     </li>
                 </ul>
-                <h4 class="my-6 text-gray-700 font-Ovo">Tools i use</h4>
+                <h4 class="my-6 text-gray-700 font-Ovo dark:text-white/80">Tools i use</h4>
 
                 <ul class="flex items-center gap-3 sm:gap-5">
                     <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border
@@ -194,38 +212,38 @@
         <div class="grid grid-cols-auto gap-6 my-10">
             <div class="border border-gray-400 rounded-lg px-8 py-12 
                 hover:shadow-black cursor-pointer hover:bg-lightHover
- hpver:-translate-y-1 duration-500">
+ hpver:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
                 <img src="./portfolio_images/images/web-icon.png" alt="" class="w-10">
-                <h3 class="text-lg my-4 text-gray-700">Web design</h3>
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web design</h3>
                 <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programing...</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img
+                <a href="" class="flex items-center gap-2 text-sm mt-5 dark:text-white/80">Read more <img
                         src="./portfolio_images/images/right-arrow.png" alt="" class="w-4"></a>
             </div>
             <div class="border border-gray-400 rounded-lg px-8 py-12 
                 hover:shadow-black cursor-pointer hover:bg-lightHover
- hpver:-translate-y-1 duration-500">
+ hpver:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
                 <img src="./portfolio_images/images/mobile-icon.png" alt="" class="w-10">
-                <h3 class="text-lg my-4 text-gray-700">Mobile app</h3>
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Mobile app</h3>
                 <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programing...</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img
+                <a href="" class="flex items-center gap-2 text-sm mt-5 dark:text-white/80">Read more <img
                         src="./portfolio_images/images/right-arrow.png" alt="" class="w-4"></a>
             </div>
             <div class="border border-gray-400 rounded-lg px-8 py-12 
                 hover:shadow-black cursor-pointer hover:bg-lightHover
- hpver:-translate-y-1 duration-500">
+ hpver:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
                 <img src="./portfolio_images/images/ui-icon.png" alt="" class="w-10">
-                <h3 class="text-lg my-4 text-gray-700">UI / UX designe</h3>
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">UI / UX designe</h3>
                 <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programing...</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img
+                <a href="" class="flex items-center gap-2 text-sm mt-5 dark:text-white/80">Read more <img
                         src="./portfolio_images/images/right-arrow.png" alt="" class="w-4"></a>
             </div>
             <div class="border border-gray-400 rounded-lg px-8 py-12 
                 hover:shadow-black cursor-pointer hover:bg-lightHover
- hpver:-translate-y-1 duration-500">
+ hpver:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white">
                 <img src="./portfolio_images/images/graphics-icon.png" alt="" class="w-10">
-                <h3 class="text-lg my-4 text-gray-700">Graphi design</h3>
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Graphi design</h3>
                 <p class="text-sm text-gray-600 leading-5">Web development is the process of building, programing...</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img
+                <a href="" class="flex items-center gap-2 text-sm mt-5 dark:text-white/80">Read more <img
                         src="./portfolio_images/images/right-arrow.png" alt="" class="w-4"></a>
             </div>
         </div>
@@ -242,12 +260,11 @@
             front-end development.
         </p>
 
-        <div class="grid grid-cols-auto my-10 gap-5">
+        <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
             <div class="aspect-square bg-[url('./portfolio_images/images/work-1.png')] bg-no-repeat 
                 bg-cover bg-center rounded-lg relative cursor-pointer group">
 
-                <div class="bg-white w-10/12 rounded-md absolute 
-                bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
                 flex items-center justify-between duration-500 group-hover:bottom-7">
 
                     <div>
@@ -280,53 +297,52 @@
             </div>
 
             <div class="aspect-square bg-[url('./portfolio_images/images/work-3.png')] bg-no-repeat 
-bg-cover bg-center rounded-lg relative cursor-pointer group">
+                bg-cover bg-center rounded-lg relative cursor-pointer group">
 
                 <div class="bg-white w-10/12 rounded-md absolute 
-bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
-flex items-center justify-between duration-500 group-hover:bottom-7">
+                bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
+                flex items-center justify-between duration-500 group-hover:bottom-7">
 
                     <div>
                         <h2 class="font-semibold">Photography site </h2>
                         <p class="text-sm text-gray-700">Web Design</p>
                     </div>
                     <div class="border rounded-full border-black w-9 aspect-square flex 
-item-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                item-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
                         <img src="./portfolio_images/images/send-icon.png" alt="" class="w-5">
                     </div>
                 </div>
             </div>
 
             <div class="aspect-square bg-[url('./portfolio_images/images/work-4.png')] bg-no-repeat 
-bg-cover bg-center rounded-lg relative cursor-pointer group">
+                bg-cover bg-center rounded-lg relative cursor-pointer group">
 
-                <div class="bg-white w-10/12 rounded-md absolute 
-bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
-flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 
+                    flex items-center justify-between duration-500 group-hover:bottom-7">
 
                     <div>
                         <h2 class="font-semibold">UI/IX designing</h2>
                         <p class="text-sm text-gray-700">UI/IX designing</p>
                     </div>
-                    <div class="border rounded-full border-black w-9 aspect-square flex 
-item-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                    <div class="border rounded-full border-black w-9 aspect-square flex item-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
                         <img src="./portfolio_images/images/send-icon.png" alt="" class="w-5">
                     </div>
                 </div>
-            </div>
-
-            <a href="#" class="w-max felx items-center justify-center gap-2 text-gray-700 
-    border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover
- duration-500 ">Show more
-                <img src="./portfolio_images/images/right-arrow-bold.png" alt="" class="w-4"></a>
-
+            </div>     
         </div>
+
+        <a href="#" class="w-max flex justify-center items-center gap-2 text-gray-700 border-[0.5px] border-gray-700 
+        rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover
+        duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover">Show more
+            <img src="./portfolio_images/images/right-arrow-bold.png" alt="" class="w-4 dark:hidden">
+            <img src="./portfolio_images/images/right-arrow-bold-dark.png" alt="" class="w-4 dark:hidden dark:block">
+        </a>
 
 
         <!-- --------------------Contact-------------- -->
 
-        <div id="contact"
-            class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./portfolio_images/images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
+        <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./portfolio_images/images/footer-bg-color.png')] 
+        bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
             <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me </h4>
             <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
             <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I'd love to hear from you! If you have any
@@ -337,17 +353,18 @@ item-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 trans
             <form action="" class="max-w-2xl mx-auto">
                 <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
                     <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none
-                    border-[0.5px] border-gray-400 rounded-md bg-white">
+                    border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
 
                     <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none
-                    border-[0.5px] border-gray-400 rounded-md bg-white">
+                    border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
                 </div>
                 <textarea rows="6" placeholder="Enter your message"
-                    class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6">
+                    class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 
+                    dark:bg-darkHover/30 dark:border-white/90">
 
                 </textarea>
                 <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto
-                hover:bg-black duration-500">Submit now
+                hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">Submit now
                     <img src="./portfolio_images/images/right-arrow-white.png" alt="" class="w-4">
                 </button>
             </form>
@@ -357,9 +374,11 @@ item-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 trans
 
         <div class="mt-20">
             <div class="text-center">
-                <img src="./portfolio_images/images/logo.png" alt="" class="w-36 mx-auto mb-2">
+                <img src="./portfolio_images/images/logo.png" alt="" class="w-36 mx-auto mb-2 dark:hidden">
+                <img src="./portfolio_images/images/logo_dark.png" alt="" class="w-36 mx-auto mb-2 hidden dark:block">
                 <div class="w-max flex items-center gap-2 mx-auto">
-                    <img src="./portfolio_images/images/mail_icon.png" alt="" class="w-6">
+                    <img src="./portfolio_images/images/mail_icon.png" alt="" class="w-6 hidden">
+                    <img src="./portfolio_images/images/mail_icon_dark.png" alt="" class="w-6 hidden dark:block">
                     ashishhpdave@gmail.com
                 </div>
             </div>
