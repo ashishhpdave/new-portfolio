@@ -350,17 +350,20 @@
                 comments or feedback, please use the form below.
             </p>
 
-            <form action="" class="max-w-2xl mx-auto">
+            <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+
+                <input type="hidden" name="access_key" value="3335f65f-c351-4313-8346-6431da58250c">
+
                 <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
                     <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none
-                    border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
+                    border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90" required name="name">
 
                     <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none
-                    border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90">
+                    border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90" required name="email">
                 </div>
                 <textarea rows="6" placeholder="Enter your message"
                     class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 
-                    dark:bg-darkHover/30 dark:border-white/90">
+                    dark:bg-darkHover/30 dark:border-white/90" required name="message">
 
                 </textarea>
                 <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto
